@@ -45,14 +45,14 @@ function displayCat() {
     // Get the container where the image will be displayed
     var imageContainer = document.getElementById('image-container');
     // Create a new Image element for the cat
-    var bearImage = new Image();
+    var catImage = new Image();
     // Set the source (file path) for the cat image
-    bearImage().src = 'displayCat'; // Assuming the cat image is named "cat.gif"
+    catImage.src = 'cat.gif'; // Assuming the cat image is named "cat.gif"
     // Set alternative text for the image (for accessibility)
-    bearImage()().alt = 'displayCatHeart';
+    catImage.alt = 'Cat';
     // When the cat image is fully loaded, add it to the image container
-    bearImage()().onload = function() {
-        imageContainer.appendChild(bearImage()());
+    catImage.onload = function() {
+        imageContainer.appendChild(catImage);
     };
 }
 
@@ -65,9 +65,9 @@ function displayCatHeart() {
     // Create a new Image element for the cat-heart
     var catHeartImage = new Image();
     // Set the source (file path) for the cat-heart image
-    catHeartImage.src = 'displaycatheart'; // Assuming the cat-heart image is named "cat-heart.gif"
+    catHeartImage.src = 'cat-heart.gif'; // Assuming the cat-heart image is named "cat-heart.gif"
     // Set alternative text for the image (for accessibility)
-    catHeartImage.alt = 'displayCat';
+    catHeartImage.alt = 'Cat Heart';
     // When the cat-heart image is fully loaded, add it to the image container
     catHeartImage.onload = function() {
         imageContainer.appendChild(catHeartImage);
